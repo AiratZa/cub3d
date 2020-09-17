@@ -6,7 +6,7 @@
 #    By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/01 23:09:24 by gdrake            #+#    #+#              #
-#    Updated: 2020/08/26 19:02:03 by gdrake           ###   ########.fr        #
+#    Updated: 2020/09/17 22:53:52 by gdrake           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ all: $(NAME)
 $(NAME): $(BASE_OBJS)
 	@ar rc $(NAME) $(BASE_OBJS)
 	@ranlib $(NAME)
-	@echo "======= BASE PART of Libft is created ^_^ ======="
+	@echo "....... BASE PART of Libft is created ^_^\n"
 
 clean:
 	@rm -f $(BASE_OBJS) $(BONUS_OBJS)
@@ -58,8 +58,7 @@ re: fclean all
 bonus: $(BASE_OBJS) $(BONUS_OBJS)
 	@ar rc $(NAME) $(BASE_OBJS) $(BONUS_OBJS)
 	@ranlib $(NAME)
-	@echo "======= Libft with BONUS PART is created ^_^ ======="
+	@echo "....... Libft with BONUS PART is created ^_^\n"
 
 %.o: %.c
 	@gcc $(FLAGS) -c $^ -o $@ -I$(INCLUDES)
-	@echo "-- $@ is compiled"
