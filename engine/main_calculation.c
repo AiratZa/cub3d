@@ -6,11 +6,11 @@
 /*   By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 20:06:46 by gdrake            #+#    #+#             */
-/*   Updated: 2020/09/10 20:06:47 by gdrake           ###   ########.fr       */
+/*   Updated: 2020/09/17 21:18:00 by gdrake           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../cub3d.h"
+#include "../includes/cub3d.h"
 
 void	ray_map_values(t_vars *vars)
 {

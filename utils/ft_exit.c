@@ -6,11 +6,11 @@
 /*   By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 20:06:04 by gdrake            #+#    #+#             */
-/*   Updated: 2020/09/10 20:06:05 by gdrake           ###   ########.fr       */
+/*   Updated: 2020/09/17 21:11:06 by gdrake           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../cub3d.h"
+#include "../includes/cub3d.h"
 
 /*
 ** -101 Cant close file for saving screenshot
@@ -86,7 +86,7 @@ instead of opening a window with a game.", 1);
 	print_error_2(situation);
 }
 
-int	ft_exit(int status, t_vars *vars, int situation, int fd)
+int		ft_exit(int status, t_vars *vars, int situation, int fd)
 {
 	if (fd > 0)
 		close(fd);

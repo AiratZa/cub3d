@@ -6,11 +6,11 @@
 /*   By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 20:06:37 by gdrake            #+#    #+#             */
-/*   Updated: 2020/09/10 20:06:38 by gdrake           ###   ########.fr       */
+/*   Updated: 2020/09/17 21:17:51 by gdrake           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../cub3d.h"
+#include "../includes/cub3d.h"
 
 void	dist_to_wall_n_start_end_wall(t_vars *vars)
 {

@@ -1,17 +1,29 @@
-#include "../cub3d.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   free_vars.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/17 20:40:05 by gdrake            #+#    #+#             */
+/*   Updated: 2020/09/17 21:49:54 by gdrake           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void free_params(t_vars *vars)
+#include "../includes/cub3d.h"
+
+void	free_params(t_vars *vars)
 {
-	if (vars->p->NO)
-		free(vars->p->NO);
-	if ((vars->p)->SO)
-		free((vars->p)->SO);
-	if ((vars->p)->WE)
-		free((vars->p)->WE);
-	if ((vars->p)->EA)
-		free((vars->p)->EA);
-	if ((vars->p)->S)
-		free((vars->p)->S);
+	if (vars->p->no)
+		free(vars->p->no);
+	if ((vars->p)->so)
+		free((vars->p)->so);
+	if ((vars->p)->we)
+		free((vars->p)->we);
+	if ((vars->p)->ea)
+		free((vars->p)->ea);
+	if ((vars->p)->s)
+		free((vars->p)->s);
 	free(vars->p);
 }
 
@@ -22,7 +34,8 @@ void	free_arr(t_vars *vars)
 	i = 0;
 	while (i < (vars->map)->y_size)
 	{
-		free((vars->m_arr)[i]);
+		if ((vars->m_arr)[i])
+			free((vars->m_arr)[i]);
 		i++;
 	}
 	free(vars->m_arr);
@@ -43,13 +56,13 @@ void	free_map(t_vars *vars)
 	free(vars->map);
 }
 
-void free_spr(t_vars *vars)
+void	free_spr(t_vars *vars)
 {
 	t_sprites_pos *tmp;
 
-	while(vars->sprites)
+	while (vars->sprites)
 	{
-		tmp = (vars->sprites);;
+		tmp = (vars->sprites);
 		vars->sprites = tmp->next;
 		free(tmp);
 	}

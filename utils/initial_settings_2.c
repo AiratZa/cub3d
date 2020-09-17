@@ -6,11 +6,11 @@
 /*   By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 20:06:00 by gdrake            #+#    #+#             */
-/*   Updated: 2020/09/10 20:06:01 by gdrake           ###   ########.fr       */
+/*   Updated: 2020/09/17 21:12:31 by gdrake           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../cub3d.h"
+#include "../includes/cub3d.h"
 
 void	configure_screen_size(void *mlx_ptr, int *x, int *y)
 {
@@ -78,8 +78,8 @@ int		initial_param_set_2(t_vars *vars, t_data *img)
 {
 	configure_screen_size(vars->mlx_ptr, &(vars->win_w), &(vars->win_h));
 	create_new_image(vars);
-	if (!(vars->win_ptr = mlx_new_window
-		(vars->mlx_ptr, vars->win_w, vars->win_h, "cub3D")))
+	if (!(vars->win_ptr = mlx_new_window(vars->mlx_ptr,
+								vars->win_w, vars->win_h, "cub3D")))
 		ft_exit(EXIT_FAILURE, vars, 1002, 0);
 	get_textures(vars);
 	if (!(vars->perp_lines = malloc(sizeof(double) * vars->win_w)))

@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils_1.c                                          :+:      :+:    :+:   */
+/*   images_colors.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 20:03:28 by gdrake            #+#    #+#             */
-/*   Updated: 2020/09/10 20:05:26 by gdrake           ###   ########.fr       */
+/*   Updated: 2020/09/17 21:10:49 by gdrake           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../cub3d.h"
+#include "../includes/cub3d.h"
 
 void	my_mlx_pixel_put(t_data *data, size_t x, size_t y, int color)
 {
@@ -27,8 +27,6 @@ int		my_mlx_pixel_get(t_data *data, size_t x, size_t y)
 	dst = data->addr + (y * data->size_line + x * (data->bits_per_pixel / 8));
 	return (*(int*)dst);
 }
-
-
 
 int		create_rgb(int r, int g, int b)
 {

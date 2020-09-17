@@ -6,11 +6,11 @@
 /*   By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 20:06:10 by gdrake            #+#    #+#             */
-/*   Updated: 2020/09/10 20:06:11 by gdrake           ###   ########.fr       */
+/*   Updated: 2020/09/17 21:17:37 by gdrake           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../cub3d.h"
+#include "../includes/cub3d.h"
 
 int				add_sprite_pos(int x, int y, t_vars *vars)
 {

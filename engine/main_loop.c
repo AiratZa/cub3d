@@ -6,11 +6,11 @@
 /*   By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 20:06:49 by gdrake            #+#    #+#             */
-/*   Updated: 2020/09/10 20:06:50 by gdrake           ###   ########.fr       */
+/*   Updated: 2020/09/17 21:18:03 by gdrake           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../cub3d.h"
+#include "../includes/cub3d.h"
 
 void	init_perp_lines(t_vars *vars)
 {

@@ -1,7 +1,5 @@
-
 NO ./textures/NO.xpm
-EA ./textures/EA.xpm   
-
+EA ./textures/EA.xpm
 SO ./textures/SO.xpm
 WE ./textures/WE.xpm
 S ./textures/SPRITE.xpm

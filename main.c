@@ -1,28 +1,41 @@
-#include "cub3d.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/17 21:00:10 by gdrake            #+#    #+#             */
+/*   Updated: 2020/09/17 21:18:27 by gdrake           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-
+#include "./includes/cub3d.h"
 
 void	init_vars_img(t_vars *vars, t_data *img)
 {
-    vars->mlx_ptr = NULL;
-    vars->win_ptr = NULL;
-    vars->img_data = NULL; 
-    vars->p = NULL;
-    vars->map = NULL;
-    vars->textures = NULL;
-    vars->current_texture = NULL;
-    vars->draw = NULL;
-    vars->keys_status = NULL;
-    vars->sprites = NULL;
-    vars->perp_lines = NULL;
-    vars->line = NULL;
+	vars->tmp = 0;
+	vars->fd = 0;
+	vars->tmp_line = NULL;
+	vars->mlx_ptr = NULL;
+	vars->win_ptr = NULL;
+	vars->img_data = NULL;
+	vars->p = NULL;
+	vars->map = NULL;
+	vars->textures = NULL;
+	vars->current_texture = NULL;
+	vars->draw = NULL;
+	vars->keys_status = NULL;
+	vars->sprites = NULL;
+	vars->perp_lines = NULL;
+	vars->line = NULL;
 	vars->m_arr = NULL;
 	vars->make_screenshot = 0;
 	img->img_ptr = NULL;
 	img->addr = NULL;
 }
 
-int	main(int argc, char **argv)
+int		main(int argc, char **argv)
 {
 	t_vars vars;
 	t_data img;

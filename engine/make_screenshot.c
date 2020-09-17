@@ -6,16 +6,16 @@
 /*   By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 20:06:52 by gdrake            #+#    #+#             */
-/*   Updated: 2020/09/10 20:06:53 by gdrake           ###   ########.fr       */
+/*   Updated: 2020/09/17 21:18:06 by gdrake           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../cub3d.h"
+#include "../includes/cub3d.h"
 
 void	fill_header_spec(unsigned char *file_header, \
 unsigned char *info_header, t_vars *vars)
 {
-	int file_size;
+	int	file_size;
 
 	file_size = 14 + 40 + vars->win_w * vars->win_h * \
 			(vars->img_data)->bits_per_pixel / 8;
@@ -42,9 +42,9 @@ unsigned char *info_header, t_vars *vars)
 void	write_bmp_info(unsigned char *file_header,\
 unsigned char *info_header, t_vars *vars, char *file_name)
 {
-	int		fd;
-	int		line_len;
-	int		i;
+	int	fd;
+	int	line_len;
+	int	i;
 
 	i = 0;
 	if ((fd = open(file_name, O_RDWR | O_CREAT, 0755)) < 0)
@@ -62,10 +62,10 @@ unsigned char *info_header, t_vars *vars, char *file_name)
 		ft_exit(EXIT_FAILURE, vars, -101, 0);
 }
 
-int			make_screenshot(t_vars *vars)
+int		make_screenshot(t_vars *vars)
 {
-	unsigned char file_header[14];
-	unsigned char info_header[40];
+	unsigned char	file_header[14];
+	unsigned char	info_header[40];
 
 	ft_bzero(file_header, 14);
 	ft_bzero(info_header, 40);
