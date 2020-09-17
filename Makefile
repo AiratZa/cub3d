@@ -14,12 +14,13 @@ MLX_DYLIB_PATH = ./mlx_linux
 CFLAGS			= -O3 
 LIBS			= -L$(MLX_DYLIB_PATH) -lmlx_linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz
 
-SRCS			= ./utils/quick_sort.c ./utils/utils_1.c ./utils/load_textures.c ./utils/ft_exit.c ./utils/initial_settings.c ./utils/initial_settings_2.c \
+SRCS			= ./utils/quick_sort.c ./utils/images_colors.c ./utils/load_textures.c ./utils/ft_exit.c ./utils/initial_settings.c ./utils/initial_settings_2.c \
 				./sprites_handler/sprites_handler_main.c ./sprites_handler/init_sprite_settings.c	main.c\
 				./parser/error_messages.c ./parser/main.c ./parser/map_border_checker.c ./parser/my_tests.c ./parser/map_parser.c\
 				 ./parser/param_parse_main.c ./parser/rgb_param_parse.c ./parser/struct_funcs.c ./parser/utils.c\
 				 get_next_line/get_next_line_utils.c get_next_line/get_next_line.c\
-				 ./engine/main_loop.c ./engine/keys_handler.c ./engine/make_screenshot.c ./engine/keys_status_handler.c ./engine/main_calculation.c ./engine/draw_walls_n_background.c
+				 ./engine/main_loop.c ./engine/keys_handler.c ./engine/make_screenshot.c ./engine/keys_status_handler.c ./engine/main_calculation.c ./engine/draw_walls_n_background.c\
+				./utils/free_vars.c ./utils/clear_imgs_n_close_window.c
 
 OBJS			= $(SRCS:.c=.o)
 

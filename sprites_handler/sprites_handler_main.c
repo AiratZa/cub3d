@@ -17,7 +17,7 @@ void	draw_sprite_stripe(t_vars *vars, t_s *s, int stripe)
 	int tex_x;
 	int tex_y;
 	int y;
-	int color;
+	int clr;
 	int d;
 
 	tex_x = (int)(256 * (stripe - (-s->spriteWidth / 2 + s->spriteScreenX)) *\
@@ -32,9 +32,9 @@ void	draw_sprite_stripe(t_vars *vars, t_s *s, int stripe)
 				s->spriteHeight * 128;
 			tex_y = ((d * vars->textures->text_sprite->height) /\
 						s->spriteHeight) / 256;
-			color = my_mlx_pixel_get(vars->textures->text_sprite, tex_x, tex_y);
-			if (color > 0)
-				my_mlx_pixel_put(vars->img_data, stripe, y, color);
+			clr = my_mlx_pixel_get(vars->textures->text_sprite, tex_x, tex_y);
+			if (clr > 0)
+				my_mlx_pixel_put(vars->img_data, stripe, y, clr);
 			y++;
 		}
 	}
@@ -55,10 +55,6 @@ void	set_start_end_x_y(t_vars *vars, t_s *s)
 	if (s->drawEndX >= (vars->win_w))
 		s->drawEndX = vars->win_w - 1;
 }
-
-/*
-** i_d invDet
-*/
 
 void	draw_sprite(t_vars *vars, int i, int *order)
 {

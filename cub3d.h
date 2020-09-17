@@ -118,3 +118,40 @@ t_data *get_current_texture(t_vars *vars);
 void draw_wall_line(t_vars *vars);
 
 void	draw_line(t_vars *vars, double tex_pos, double step, int tex_x);
+
+
+/*
+** UTILS DIR
+*/
+
+int	ft_exit(int status, t_vars *vars, int situation, int fd);
+
+void	free_vars(t_vars *vars);
+
+int clear_imgs_n_close_window(t_vars *vars);
+
+void	my_mlx_pixel_put(t_data *data, size_t x, size_t y, int color);
+
+int		my_mlx_pixel_get(t_data *data, size_t x, size_t y);
+
+int		create_rgb(int r, int g, int b);
+
+int		create_new_image(t_vars *vars);
+
+void		initial_check(int argc, char **argv, t_vars *vars);
+
+void	init_keys(t_vars *vars);
+
+void		initial_param_set(t_vars *vars, t_data *img);
+
+int		initial_param_set_2(t_vars *vars, t_data *img);
+
+void	set_dir_n_plane(t_vars *vars, char player_dir);
+
+void	set_initial_player_pos_n_speed(t_vars *vars);
+
+void	configure_screen_size(void *mlx_ptr, int *x, int *y);
+
+int	get_textures(t_vars *vars);
+
+void	quick_sort(int *order, double *distance, int count);
