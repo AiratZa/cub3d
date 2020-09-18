@@ -6,7 +6,7 @@
 /*   By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/10 20:06:04 by gdrake            #+#    #+#             */
-/*   Updated: 2020/09/17 21:11:06 by gdrake           ###   ########.fr       */
+/*   Updated: 2020/09/18 18:41:48 by gdrake           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	print_error_2(int situation)
 	else if (situation == 50)
 		ft_putstr_fd("Non-mentioned parameter found in .cub file\n", 1);
 	else if (situation == 51)
-		ft_putstr_fd("No one of parameters should be negative\n", 1);
+		ft_putstr_fd("No one of params should be negative+(R(x,y) != 0)\n", 1);
 	else if (situation == 52)
 		ft_putstr_fd("One of parameters format is incorrect\n", 1);
 	else if (situation == 101)

@@ -6,7 +6,7 @@
 /*   By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/17 18:29:40 by gdrake            #+#    #+#             */
-/*   Updated: 2020/09/17 21:15:35 by gdrake           ###   ########.fr       */
+/*   Updated: 2020/09/18 18:38:15 by gdrake           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ void	r_param_parse_2(char *line, t_vars *vars, int fd)
 			ft_exit(EXIT_FAILURE, vars, 52, fd);
 		line++;
 	}
+	if ((p->r_width <= 0) || (p->r_height <= 0))
+		ft_exit(EXIT_FAILURE, vars, 51, fd);
 }
 
 int		r_param_parse(char *line, t_vars *vars, int fd)

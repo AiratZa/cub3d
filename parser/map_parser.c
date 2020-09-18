@@ -6,7 +6,7 @@
 /*   By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/17 18:29:52 by gdrake            #+#    #+#             */
-/*   Updated: 2020/09/17 21:15:28 by gdrake           ###   ########.fr       */
+/*   Updated: 2020/09/18 18:41:10 by gdrake           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 void	map_parser_2(t_vars *vars)
 {
 	convert_map_to_rectangle(vars);
-	testing(vars->m_arr, vars);
 	check_chars_and_entry_point(vars);
 	map_line_len_append_and_check(vars);
 	check_map_borders(vars);

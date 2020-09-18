@@ -6,7 +6,7 @@
 /*   By: gdrake <gdrake@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/17 20:36:17 by gdrake            #+#    #+#             */
-/*   Updated: 2020/09/17 21:20:00 by gdrake           ###   ########.fr       */
+/*   Updated: 2020/09/18 18:40:52 by gdrake           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,5 @@ int			number_length(int nbr);
 int			only_spaces_in_line(char *line);
 
 int			ft_strlen_sym(char *str);
-
-void		testing(char **arr, t_vars *vars);
 
 #endif
