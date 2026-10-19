@@ -1,0 +1,8 @@
+*.o
+*.a
+*.dylib
+cub3D
+mlx_sources/minilibx_mms_20200219/*.swiftmodule
+mlx_sources/minilibx_mms_20200219/*.swiftdoc
+mlx_sources/minilibx_mms_20200219/*.swiftsourceinfo
+mlx_sources/minilibx_mms_20200219/*.abi.json
